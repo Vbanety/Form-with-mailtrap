@@ -1,6 +1,6 @@
 ## Simple project with form sending email from html to your [mailtrap](https://mailtrap.io/i) account.
 
-[presantation](./public/assets/presentation.png)
+![presantation](./public/assets/presentation.png)
 
 ### Settings:
 
