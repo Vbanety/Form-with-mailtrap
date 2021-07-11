@@ -10,8 +10,10 @@ btn.addEventListener('click', () => {
         Password: "85ec3affff5fc6",
         To: "batistavesuporte@gmail.com",
         From: inputs.elements["email"].value,
-        Subject: "Assunto vindo do portfolio",
-        Body: inputs.elements["subjects"].value + "<br>" + inputs.elements["name"].value + "<br>" + inputs.elements["message"].value + "<br>"
-    }).then(msg=> alert('Email enviado com sucesso!!')).then(document.querySelector())
+        Subject: "Recado do portfolio",
+        Body: inputs.elements["subjects"].value 
+        + "<br><br>" + inputs.elements["name"].value 
+        + "<br><br>" + inputs.elements["message"].value
+    }).then(msg=> alert('Email enviado com sucesso!!'))
 })
 

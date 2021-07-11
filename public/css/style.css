@@ -66,4 +66,13 @@ body {
   outline-color: #5858f6;
 }
 
+@media screen and (max-width: 728px) {
+  .container {
+    width: 95%;
+  }
+  .container h1 {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

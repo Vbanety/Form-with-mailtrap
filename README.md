@@ -2,5 +2,8 @@
 
 ## Send email to the Mailtrap
 
-**Project**
+**Libraries**
 
+[x] scss
+[x] express
+[x] cdn smtpjs
