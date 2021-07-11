@@ -3,10 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, "sans-serif";
-  background: rgba(246, 242, 242, 0.5);
+  background: #f6f2f2;
+  position: relative;
 }
 
-.container, form {
+.container, form, #modal, #modal div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,10 +61,63 @@ body {
   font-weight: bold;
 }
 .container form button:hover {
-  background: rgba(59, 247, 59, 0.8);
+  background: #fff;
+  border: 0.1rem solid rgba(59, 247, 59, 0.8);
+  color: rgba(59, 247, 59, 0.8);
+  cursor: pointer;
 }
 .container form input:hover {
   outline-color: #5858f6;
+}
+.container form .forEmail {
+  font-size: 3rem;
+  color: rgba(59, 247, 59, 0.8);
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  transition: all, 2s;
+}
+#modal div {
+  background: #fff;
+  width: 80%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+#modal div h1 {
+  font-size: 2rem;
+  color: #000;
+}
+#modal div button {
+  font-size: 1.4rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem 1rem;
+  height: 2rem;
+  background: #71f771;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.2rem;
+}
+#modal div button:hover {
+  cursor: pointer;
+  border: 0.02rem solid #71f771;
+  background-color: #fff;
+  color: #71f771;
+}
+
+#modal.afterSend {
+  display: flex;
+  transition: all, 2s;
 }
 
 @media screen and (max-width: 728px) {
@@ -72,6 +126,13 @@ body {
   }
   .container h1 {
     text-align: center;
+  }
+
+  #modal {
+    text-align: center;
+  }
+  #modal div {
+    padding: 2rem 0.5rem;
   }
 }
 
